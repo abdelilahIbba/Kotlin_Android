@@ -1,3 +1,5 @@
+package tuto
+
 fun main() {
     var c1: Int = 22
     var c2: String = "Abdelilah"
