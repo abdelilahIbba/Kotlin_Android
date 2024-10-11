@@ -51,7 +51,7 @@ fun Image1(modifier: Modifier = Modifier) {
         painter = image,
         contentDescription = null,
         modifier = modifier
-            .padding(top = 24.dp)
+            .padding(top = 0.dp)
             .size(100.dp)
             .clip(CircleShape)
     )
@@ -69,7 +69,7 @@ fun BusinessCardScreen() {
             painter = backgroundImage,
             contentDescription = "Background Image",
             modifier = Modifier.fillMaxSize(),
-            contentScale = androidx.compose.ui.layout.ContentScale.Crop
+            contentScale = androidx.compose.ui.layout.ContentScale.Crop,
         )
 
         // Adding a gradient overlay for flow effect
@@ -96,7 +96,7 @@ fun BusinessCardScreen() {
             verticalArrangement = Arrangement.Center
         ) {
             // Profile image
-            Image1(modifier = Modifier.size(200.dp))
+            Image1(modifier = Modifier.size(100.dp))
 
             // Name and title section
             Greeting(modifier = Modifier.padding(vertical = 16.dp))
@@ -133,7 +133,7 @@ fun ContactInfo() {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
         ContactRow(icon = Icons.Filled.Phone, contactDetail = "el-Hedim in the old city")
         ContactRow(icon = Icons.Filled.Email, contactDetail = "mek.nes@android.com")
-        ContactRow(icon = Icons.Filled.Person, contactDetail = "@Meknes")
+        ContactRow(icon = Icons.Filled.Person, contactDetail = "@Meknes_soloRedMan")
     }
 }
 
